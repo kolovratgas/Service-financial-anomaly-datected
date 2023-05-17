@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Предварительный просмотр</title>
+</head>
+<body>
+    <p>Первые 10 строк данных</p>
+    <br>
+    {{ data_var|safe }}
+    <img src="../static/imgs/pic1.png" alt="my_plot">
+    <form action="/show_res" target="_self">
+        <input type="submit" value="Обнаружить аномалии">
+    </form>
+</body>
+</html>

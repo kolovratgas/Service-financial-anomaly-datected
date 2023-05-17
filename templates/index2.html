@@ -1,0 +1,18 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>Anomaly Detector</title>
+</head>
+<body>
+    <h1>Anomaly Detector</h1>
+
+    <form method="POST" enctype="multipart/form-data" action="/">
+        <input type="file" name='file' accept=".csv">
+        <input type="submit" value="Upload">
+    </form>
+    <p style="color:green;"> File upload successfully!</p>
+    <form action="/show_data" target="_blank">
+      <input type="submit" value="Show CSV"/>
+    </form>
+
+</body>
